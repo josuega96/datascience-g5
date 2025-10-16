@@ -36,7 +36,7 @@ while(True):
         ruc = input("INGRESE RUC DE LA EMPRESA: ")
         razon_social = input("INGRESE NOMBRE DE LA EMPRESA: ")
         direccion = input("INGRESE DIRECCION DE LA EMPRESA: ")
-        #CREAMOS EL DICCIONARIO DE LA NUEVA EMPRESA
+        #CREAMOS EL DICCIONARIO 
         nueva_empresa = {
             "razon_social": razon_social,
             "direccion": direccion
@@ -56,7 +56,7 @@ while(True):
         print("=" * ANCHO)
         print(" " * 15 + "ACTUALIZAR EMPRESA")
         print("=" * ANCHO)
-        #PEDIMOS EL RUC DE LA EMPRESA A ACTUALIZAR
+        #PEDIMOS EL RUC 
         ruc = input("INGRESE RUC DE LA EMPRESA A ACTUALIZAR :")
         if ruc in dic_empresas:
             print(f"Empresa encontrada: {dic_empresas[ruc]["razon_social"]}")
@@ -65,13 +65,13 @@ while(True):
             if nueva_empresa:
                 dic_empresas[ruc]["razon_social"] = nueva_empresa
             if nueva_direccion:
-                dic_empresas[ruc]["direccion"] =nueva_direccion
+                dic_empresas[ruc]["direcion"] =nueva_direccion
             print("Empresa actualizada exitosamente.")
         else:
             print("No se encontro la empresa con ese RUC.")
     if opcion == 4:
         print("=" * ANCHO)
-        print(" " * 15 + "ELIMINAR EMPRESA")
+        print(" " * 15 + "ELIMNAR EMPRESA")
         print("=" * ANCHO)
         ruc = input("INGRESE EL RUC DE LA EMPRESA A ACTUALIZAR :")
         if dni in dic_empresas:
